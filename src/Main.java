@@ -5,7 +5,6 @@ public class Main {
 	public static final boolean F = false;
 	public static final boolean V = true;
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		boolean[][] y = {
 				{F,V,F,F,F,F,F},
 				{V,F,V,F,F,F,F},
@@ -21,11 +20,7 @@ public class Main {
 			System.out.println(i + " - " + aristas);	
 		}
 		
-		Grafo b = new Grafo(6);
-		for(int i=0;i<b.size();i++) {
-			aristas = b.getAristas(i);
-			System.out.println(i + " - " + aristas);	
-		}
+		System.out.println(g.fuerzaBruta().size());
 	}
 
 }
